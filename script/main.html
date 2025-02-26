@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-slate-800">
+    <section class="max-w-md min-h-screen mx-auto py-6 bg-gray-200">
+        <header>
+            <nav class="flex justify-center items-center">
+                <img src="./assets/Group.png" alt="">
+                <div>
+                    <h1 class="text-3xl font-bold">$ <span id="main-balance">4500</span></h1>
+                    <p>Available Balance</p>
+                </div>
+                <div>
+                    <button class="btn rounded-xl mx-10">Log Out</button>
+                </div>
+            </nav>
+            <section class="mt-10">
+                <h1 class="text-2xl font-bold mb-2 p-2">Welcome to Payooo!</h1>
+                <p class="p-2">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+                <div class="cards grid grid-cols-3 mt-14 gap-2 p-2">
+                    <div class="box cursor-pointer border p-4 text-center rounded-sm">
+                        <img class="w-8 mx-auto" src="./assets/wallet1.png" alt="">
+                        <h3>Add Money</h3>
+                    </div>
+                    <div class="box border p-4 text-center rounded-sm">
+                        <img class="w-8 mx-auto" src="./assets/send1.png" alt="">
+                        <h3>Cashout</h3>
+                    </div>
+                    <div class="box border p-4 text-center rounded-sm">
+                        <img class="w-8 mx-auto" src="./assets/money1.png" alt="">
+                        <h3>Transfer Money</h3>
+                    </div>
+                    <div class="box border p-4 text-center rounded-sm">
+                        <img class="w-8 mx-auto" src="./assets/bonus1.png" alt="">
+                        <h3>Get Bonus</h3>
+                    </div>
+                    <div class="box border p-4 text-center rounded-sm">
+                        <img class="w-8 mx-auto" src="./assets/purse1.png" alt="">
+                        <h3>Pay Bill</h3>
+                    </div>
+                    <div class="box border p-4 text-center rounded-sm">
+                        <img class="w-8 mx-auto" src="./assets/transaction1.png" alt="">
+                        <h3>Transactions</h3>
+                    </div>
+                </div>
+                <section id="addmoney">
+                    <h2 class="text-2xl font-bold p-2">Add Money</h2>
+                    <div class="">
+                        <div class="hero-content flex-col lg:flex-row-reverse">
+
+                            <div class="card w-full max-w-sm shrink-0 shadow-2xl">
+                                <form class="card-body">
+                                    <legend>Select Bank</legend>
+                                    <label class="form-control w-full max-w-xs">
+                                        <div class="label">
+                                            <span class="label-text"></span>
+                                            <span class="label-text-alt"></span>
+                                        </div>
+                                        <select class="select select-bordered">
+                                            <option disabled selected>Select back</option>
+                                            <option value="Bkash">Bkash</option>
+                                            <option value="Nagad">Nagad</option>
+                                            <option value="Rocket">Rocket</option>
+                                            <option value="DBBL">DBBL</option>
+
+                                        </select>
+
+                                    </label>
+
+                                    <div class="form-control">
+                                        <label class="label">
+                                            <span class="label-text">Bank Account Number</span>
+                                        </label>
+                                        <input type="email" placeholder="Enter 11 digit account number"
+                                            class="input input-bordered" required />
+                                    </div>
+                                    <div class="form-control">
+                                        <label class="label">
+                                            <span class="label-text">Amount to Add</span>
+                                        </label>
+                                        <input id="amount" type="email" placeholder="Add Amount to withdraw"
+                                            class="input input-bordered" required />
+                                    </div>
+                                    <div class="form-control">
+                                        <label class="label">
+                                            <span class="label-text">Pin Number</span>
+                                        </label>
+                                        <input id="pin" type="Pin Number" placeholder="Enter 4 digit pin number"
+                                            class="input input-bordered" required />
+                                        <label class="label">
+                                            <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                                        </label>
+                                    </div>
+                                    <div id="add-money" class="form-control mt-6">
+                                        <button class="btn   rounded-lg text-white font-bold bg-[#0874F2]">Add
+                                            Money</button>
+                                    </div>
+                            </div>
+                        </div>
+                </section>
+                <section id="Cashout">
+                    <h2 class="text-2xl font-bold p-2">Cash Out</h2>
+                    <div class="">
+                        <div class="hero-content flex-col lg:flex-row-reverse">
+
+                            <div class="card w-full max-w-sm shrink-0 shadow-2xl">
+                                <form class="card-body">
+                                    <div class="form-control">
+                                        <label class="label">
+                                            <span class="label-text">Bank Account Number</span>
+                                        </label>
+                                        <input type="email" placeholder="Enter 11 digit account number"
+                                            class="input input-bordered" required />
+                                    </div>
+                                    <div class="form-control">
+                                        <label class="label">
+                                            <span class="label-text">Amount to Add</span>
+                                        </label>
+                                        <input id="cashout-amount" type="amount" placeholder="Add Amount to withdraw"
+                                            class="input input-bordered" required />
+                                    </div>
+                                    <div class="form-control">
+                                        <label class="label">
+                                            <span class="label-text">Pin Number</span>
+                                        </label>
+                                        <input id="cashout-pin" type="Pin Number" placeholder="Enter 4 digit pin number"
+                                            class="input input-bordered" required />
+                                        <label class="label">
+                                            <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                                        </label>
+                                    </div>
+                                    <div id="add-money" class="form-control mt-6">
+                                        <button id="cashout-btn" class="btn   rounded-lg text-white font-bold bg-[#0874F2]">Cashout</button>
+                                    </div>
+                            </div>
+                        </div>
+                </section>
+            </section>
+        </header>
+    </section>
+    <script src="./addMoney.js"></script>
+    <script src="./toggle.js"></script>
+    <script src="./cashout.js"></script>
+</body>
+
+</html>
