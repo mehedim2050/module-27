@@ -6,7 +6,7 @@ document.getElementById("login-btn").addEventListener("click", function (event) 
         console.log("yes")
         if (pin==="1234") {
             console.log("okay thik ache")
-            window.location.href = "./script/main.html";
+            window.location.href = "./main.html";
         }
         else {
             alert("pin thik nai")

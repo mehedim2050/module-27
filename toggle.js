@@ -13,3 +13,6 @@ document.getElementById("cashout-box").addEventListener("click", function(){
 function handleToggle(id,status){
     document.getElementById(id).style.display=status;
 }
+document.getElementById("discover-btn").addEventListener("click", function (event) {
+    window.location.href = "./main.html"
+})
